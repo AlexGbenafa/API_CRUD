@@ -36,15 +36,20 @@ Aucun.
 ## Réponses
 200 OK : Liste des utilisateurs récupérée avec succès.
 [
+
   {
+  
     "id": 1,
     "nom": "John Doe",
     "email": "johndoe@example.com"
   },
+  
   {
+  
     "id": 2,
     "nom": "Jane Smith",
     "email": "janesmith@example.com"
+    
   },
   ...
 ]
@@ -57,6 +62,7 @@ Récupère les informations d'un utilisateur spécifique.
 id (obligatoire) : ID de l'utilisateur.
 ## Réponses
 200 OK : Informations de l'utilisateur récupérées avec succès.
+
 {
   "id": 1,
   "nom": "John Doe",
@@ -71,17 +77,24 @@ POST /users
 Crée un nouvel utilisateur.
 
 ## Corps de la requête
+
 {
+
   "nom": "John Doe",
+  
   "email": "johndoe@example.com"
+  
 }
 
 ## Réponses
 201 Created : Utilisateur créé avec succès.
 {
   "id": 1,
+  
   "nom": "John Doe",
+  
   "email": "johndoe@example.com"
+  
 }
 
 400 Bad Request : Données de requête invalides.
@@ -102,9 +115,13 @@ id (obligatoire) : ID de l'utilisateur à mettre à jour.
 ## Réponses
 200 OK : Utilisateur mis à jour avec succès.
 {
+
   "id": 1,
+  
   "nom": "John Smith",
+  
   "email": "johnsmith@example.com"
+  
 }
 
 404 Not Found : Utilisateur non trouvé.
