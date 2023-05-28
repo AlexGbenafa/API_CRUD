@@ -5,9 +5,9 @@ Cette API fournit des fonctionnalités CRUD (Create, Read, Update, Delete) pour 
 
 ## Prérequis
 Installez les modules necessaires:
-### Express: npm install express
-### Mysql: npm install mysql
-### Readline: npm install readline
+### Express: ```npm install express```
+### Mysql: ```npm install mysql```
+### Readline: ```npm install readline```
 
 ### Connexion base de donnee
 Assurez vous de correctement configurer le fichier "database.js" comme suis:
@@ -15,20 +15,13 @@ Assurez vous de correctement configurer le fichier "database.js" comme suis:
 
 const connection = mysql.createConnection({
 
-
     host: 'localhost',
-    
-    
     user: 'nomUtilisateurDeVotreBD',
-    
-    
     password: 'motDePasseDeVotreBD',
-    
-    
     database: 'nomDeVotreBD'
-    
-    
 });
+
+
 
 ## Base URL
 http://localhost:2000/api
