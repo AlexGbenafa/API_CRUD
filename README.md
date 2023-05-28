@@ -11,11 +11,23 @@ Installez les modules necessaires:
 
 ### Connexion base de donnee
 Assurez vous de correctement configurer le fichier "database.js" comme suis:
+
+
 const connection = mysql.createConnection({
+
+
     host: 'localhost',
+    
+    
     user: 'nomUtilisateurDeVotreBD',
+    
+    
     password: 'motDePasseDeVotreBD',
+    
+    
     database: 'nomDeVotreBD'
+    
+    
 });
 
 ## Base URL
