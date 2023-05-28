@@ -27,6 +27,14 @@ const tableRoutes = require('./routes/table');
 // Utilisez le routeur pour les routes commençant par "/api"
 app.use('/api', tableRoutes);*/
 
-const create = require('./routes/create')
+/*const create = require('./routes/create')
 //Methode create pour inserer des donnees dans la base
-app.use('/api', create)
+app.use('/api', create)*/
+
+/*const deleteUser = require('./routes/deleteUser')
+//Methode delete pour supprimer des donnees dans la base
+app.use('/api', deleteUser)*/
+
+const updateUser = require('./routes/updateUser')
+//Methode delete pour mettre a jour des donnees dans la base
+app.use('/api', updateUser)
